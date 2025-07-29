@@ -1,3 +1,4 @@
-from typing import Optional
+from typing import Optional, TypeAlias, TypeVar
 
-Nullable = Optional
+T = TypeVar('T')
+Nullable: TypeAlias = Optional[T]
