@@ -17,6 +17,10 @@ select = [
     "I",
 ]
 fixable = ["ALL"]
+ignore = [
+    # flake8-simplify Yoda-condition
+    "SIM300"
+]
 
 [format]
 # Quote rules:
