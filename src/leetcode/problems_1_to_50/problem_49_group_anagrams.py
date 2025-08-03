@@ -1,3 +1,6 @@
+from utils.list import sorted_nested
+
+
 class Solution:
     """
     Solution to LeetCode problem 49, NeetCode 150 - arrays & hashing
@@ -28,17 +31,10 @@ class Solution:
         return list(groups.values())
 
 
-def sorted_inner(groups: list[list[str]]) -> list[list[str]]:
-    inner = []
-    for group in groups:
-        inner.append(sorted(group))
-    return sorted(inner)
-
-
 def test_solution() -> None:
     solution = Solution()
-    assert sorted_inner(solution.group_anagrams([])) == sorted_inner([])
-    assert sorted_inner(solution.group_anagrams(["x"])) == sorted_inner([["x"]])
-    assert sorted_inner(solution.group_anagrams(["act", "pots", "tops", "cat", "stop", "hat"])) == sorted_inner(
+    assert sorted_nested(solution.group_anagrams([])) == sorted_nested([])
+    assert sorted_nested(solution.group_anagrams(["x"])) == sorted_nested([["x"]])
+    assert sorted_nested(solution.group_anagrams(["act", "pots", "tops", "cat", "stop", "hat"])) == sorted_nested(
         [["hat"], ["act", "cat"], ["stop", "pots", "tops"]]
     )
