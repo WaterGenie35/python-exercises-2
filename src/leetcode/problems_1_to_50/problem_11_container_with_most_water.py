@@ -1,6 +1,3 @@
-from utils.typing import Nullable
-
-
 class Solution:
     """
     Solution to LeetCode problem 11, NeetCode 150 - two pointers
