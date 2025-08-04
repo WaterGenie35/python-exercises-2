@@ -1,6 +1,6 @@
 class Solution:
     """
-    Solution to LeetCode problem x, NeetCode y - category
+    Solution to LeetCode problem x, NeetCode 150 - category
     leetcode_link
     neetcode_link
 
